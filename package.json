@@ -1,0 +1,33 @@
+{
+  "name": "ts-node-template",
+  "version": "1.0.0",
+  "description": "Template for typescript-node project",
+  "repository": "git@github.com:xwartz/ts-node-template.git",
+  "homepage": "https://github.com/xwartz/ts-node-template",
+  "author": "xwartz <stddup@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "!dist/**/*.test.*"
+  ],
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf dist",
+    "release": "yarn publish --access public --non-interactive"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.2.0",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
