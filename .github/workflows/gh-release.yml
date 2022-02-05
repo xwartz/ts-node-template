@@ -17,7 +17,7 @@ jobs:
       - name: Changelog
         uses: fregante/release-with-changelog@v3
         with:
-          token: ${{ github.token }}
+          token: ${{ secrets.GH_TOKEN }}
           exclude: '^Merge'
           commit-template: '- {hash} {title}'
           template: |
