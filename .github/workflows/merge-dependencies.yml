@@ -20,4 +20,4 @@ jobs:
         # Guarantee that commit comes from Dependabot (don't blindly trust external GitHub Actions)
         if: github.actor == 'dependabot[bot]'
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
