@@ -16,7 +16,7 @@
     "start": "ts-node ./src/index.ts",
     "build": "pnpm clean && tsc",
     "clean": "rm -rf dist",
-    "release": "pnpm publish --access public --non-interactive"
+    "release": "pnpm publish --access public"
   },
   "engines": {
     "node": ">=16.13.0"
