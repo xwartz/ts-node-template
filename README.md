@@ -6,12 +6,18 @@ Template for typescript-node project
 
 ### dev
 ```
-$ yarn install
-$ yarn start
+$ pnpm install
+$ pnpm start
 ```
 
 ### build
 
 ```
-yarn build # create a production build
+pnpm build
+```
+
+### publish to npm
+
+```
+pnpm release
 ```
