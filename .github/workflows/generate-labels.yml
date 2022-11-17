@@ -2,7 +2,7 @@ name: 'Generate Labels'
 
 on:
   pull_request:
-    types: [opened, edited, synchronize]
+    types: [opened, edited]
 
 jobs:
   label:
