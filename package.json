@@ -14,9 +14,9 @@
   ],
   "scripts": {
     "start": "ts-node ./src/index.ts",
-    "build": "yarn clean && tsc",
+    "build": "pnpm clean && tsc",
     "clean": "rm -rf dist",
-    "release": "yarn publish --access public --non-interactive"
+    "release": "pnpm publish --access public --non-interactive"
   },
   "engines": {
     "node": ">=16.13.0"
