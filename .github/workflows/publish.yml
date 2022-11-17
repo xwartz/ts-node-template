@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 16
       - name: install
-        run: pnpm install --check-files --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: build
         run: pnpm build
   publish:
@@ -28,7 +28,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - name: install
-        run: pnpm install --check-files --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: set dist-tag
         run: |
           case "${{github.event.release.name}}" in
@@ -46,4 +46,4 @@ jobs:
           echo ">> dist-tag: ${{ env.r_tag }}"
           pnpm release --tag ${{ env.r_tag }}
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
