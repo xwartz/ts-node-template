@@ -6,7 +6,6 @@
   "homepage": "https://github.com/xwartz/ts-node-template",
   "author": "xwartz <stddup@gmail.com>",
   "license": "UNLICENSED",
-  "private": true,
   "main": "dist/index.js",
   "files": [
     "dist",
@@ -16,7 +15,10 @@
     "start": "ts-node ./src/index.ts",
     "build": "pnpm clean && tsc",
     "clean": "rm -rf dist",
-    "release": "pnpm publish --access public"
+    "release": "pnpm publish"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=16.13.0"
